@@ -5,16 +5,17 @@
 // Puedes hacer uso de la base de datos a través de la variable `data`
 // console.log(data);
 
-function loadCoders(turma) {
-  var sede = "CDMX";
-  var listCoders = document.getElementById("alunas-mexico");
+function loadCoders(sede, ano) {
+
+  var listCoders = document.getElementById("list-coders");
   listCoders.innerHTML = "";
-  for (turma in data[sede]) {
-      for (i in data[sede][turma]["students"]) {
-        console.log(data[sede][turma]);
+  // for (turma in data[sede]) {
+  //     console.log(data[sede]);
+  //     console.log(data[sede][ano]);
+      for (i in data[sede][ano]["students"]) {
         var img = document.createElement("img");
-        img.src = data[sede][turma]["students"][i]["photo"];
+        img.src = data[sede][ano]["students"][i]["photo"];
         listCoders.appendChild(img);
       }
-    }
+    // }
 };
