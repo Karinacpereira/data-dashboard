@@ -1,22 +1,37 @@
 *{
-  margin: 0;
-  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 #check{
   display: none;
 }
 
-#btn-group-toggle{
+#icone{
   cursor: pointer;
   padding: 15px;
   position: absolute;
-  align-items: center;
-  z-index: 1;
+  z-index: 1030;
+  margin-top: 40px;
 }
 
 .icon-bars{
@@ -26,11 +41,12 @@ body{
 
 .barra{
   background-color: #ECECEC;
-  height: 100%;
-  width: 300px;
+  height: 336px;
+  width: 228px;
   position: absolute;
   transition: all .2s linear;
   left: -300px;
+  margin-top: 40px;
 }
 
 nav{
@@ -53,11 +69,13 @@ nav a{
   border-bottom: 2px solid #ECECEC;
   opacity: 0;
   margin-top: 200px;
+  text-decoration: 
 }
 
 .link:hover{
   background-color: #FFE521;
   color: #000000;
+  text-decoration: none;
 }
 
 #check:checked ~ .barra{
@@ -77,44 +95,13 @@ nav a{
   transform: translate(-50%, -50%);
 }
 
-.pulse {
-  animation: pulse 2.5s infinite;
-  margin: 0 auto;
-  display: table;
-  margin-top: 50px;
-  animation-direction: alternate;
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    -webkit-filter: brightness(100%);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-    -webkit-filter: brightness(200%);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    filter: brightness(100%);
-  }
-  100% {
-    transform: scale(1.1);
-    filter: brightness(200%);
-  }
-}
 .sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 100; /* Behind the navbar */
-  padding: 48px 0 0; /* Height of navbar */
+  padding: 48px 0 0; Height of navbar
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
@@ -124,7 +111,7 @@ nav a{
   height: calc(100vh - 48px);
   padding-top: .5rem;
   overflow-x: hidden;
-  overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
+  overflow-y: hidden; Scrollable contents if viewport is shorter than content.
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
@@ -193,7 +180,7 @@ nav a{
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
+} */
 
 /*
  * Utilities
@@ -201,3 +188,25 @@ nav a{
 
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+img{
+  width: auto;
+  height: 35px;
+  margin-top: -9px;
+  margin-left: 30px;
+}
+
+#list-coders{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+#list-coders img {
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+}
