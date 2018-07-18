@@ -22,7 +22,10 @@
 // Puedes hacer uso de la base de datos a través de la variable `data`
 // console.log(data);
 
-// O número total de alunas presentes pela sede e geração.
+$(function () {
+  $('.dropdown-toggle').dropdown();
+});
+
 function numberOfCoders(){
   var codersActive = 0;
   var div = document.createElement("div");
