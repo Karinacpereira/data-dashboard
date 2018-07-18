@@ -73,13 +73,13 @@
     <div id="notas">
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
         <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> 2017-2
+          <input type="radio" name="options" id="option1" autocomplete="off" checked>2017-2
         </label>
         <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Total de Alunas
+          <input type="radio" name="options" id="option2" autocomplete="off" checked onclick="numberOfCoders('CDMX','2017-2')"> Total de Alunas
         </label>
         <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Desistentes
+          <input type="radio" name="options" id="option3" autocomplete="off" checked onclick="codersDropOut('CDMX','2017-2')"> Desistentes
         </label>
         <label class="btn btn-secondary">
           <input type="radio" name="options" id="option3" autocomplete="off"> NPS
@@ -91,10 +91,13 @@
           <input type="radio" name="options" id="option3" autocomplete="off"> Nota HSE
         </label>
         <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Feedback
+          <input type="radio" name="options" id="option3" autocomplete="off" checked onclick="gradeTeacher('CDMX','2017-2')"> Mentores
         </label>
         <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off" checked onclick="loadCoders('CDMX','2017-2')"> Feedback
+          <input type="radio" name="options" id="option3" autocomplete="off"checked onclick="gradeJedis('CDMX','2017-2')"> Jedis
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off" checked onclick="loadCoders('CDMX','2017-2')"> Perfil
         </label>
       </div>
     </div>

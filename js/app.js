@@ -45,7 +45,7 @@ function numberOfCoders(){
     };
   };
   listCoders.appendChild(div);
-}
+};
 
 
 // A porcentagem de alunas desistentes
@@ -72,7 +72,7 @@ function codersDropOut(){
     };
   };
   listCoders.appendChild(div);
-}
+};
 
 
 function loadCoders(site, labClass ) {
@@ -86,6 +86,5 @@ function loadCoders(site, labClass ) {
         var img = document.createElement("img");
         img.src = data[site][labClass]["students"][i]["photo"];
         listCoders.appendChild(img);
-      }
-    // }
+      };
 };
