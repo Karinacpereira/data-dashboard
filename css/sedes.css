@@ -55,37 +55,61 @@ nav{
   top: 70px;
 }
 
-nav a{
-  text-decoration: none;
+.item label{
+  display: block;
+  padding: 10px;
+  background-color: #434343;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: solid 2px #aaa;
 }
 
-.link{
-  background-color: #494950;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12pt;
-  transition: all .2s linear;
-  color: #f4f4f9;
-  border-bottom: 2px solid #ECECEC;
-  opacity: 0;
-  margin-top: 200px;
-  text-decoration: 
-}
-
-.link:hover{
+.item label:hover{
   background-color: #FFE521;
   color: #000000;
   text-decoration: none;
 }
 
-#check:checked ~ .barra{
-  transform: translateX(300px);
+.item ul{
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .4s linear
 }
 
-#check:checked ~ .barra nav a .link{
-  opacity: 1;
-  margin-top: 0;
-  transition-delay:  .1s;
+.item ul li a{
+  width: 100%;
+  height: 25px;
+  display: block;
+  text-decoration: none;
+  background-color: #fafafa;
+  color: #000000;
+  border-bottom: solid 2px #aaa;
+}
+
+.item input:checked ~ ul{
+  height: auto;
+  max-height: 200px;
+  transform: all;
+}
+
+.item input{
+  display: none;
+}
+
+.item ul li a:hover{
+  background-color: #FFE521;
+  
+}
+
+nav a{
+  text-decoration: none;
+}
+
+#check:checked ~ .barra{
+  transform: translateX(300px);
 }
 
 #btn-group-toggle{
