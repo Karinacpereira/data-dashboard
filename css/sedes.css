@@ -210,3 +210,10 @@ img{
   width: 200px;
   height: 200px;
 }
+
+#notas{
+  display: flex;
+  flex-direction: column;
+  margin-left: 45%;
+  transform: translate(-50%);
+}
